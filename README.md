@@ -1,6 +1,6 @@
 # Pushing you Onward with your knowledge of Authentication.
 
-![UnAuthorized](keep-calm-you-are-unauthorized.png)
+![UnAuthorized](keep-calm-you-are-not-authorized.png)
 
 * The objective of this challenge is to get you used to answering a few questions about Authentication.
 * **NOTE** Authentication is a subject that many people spend a large amount of their careers learning about. This is not something we expect you to have a mastery over, rather, we're preparing you to be able have an intelligent.

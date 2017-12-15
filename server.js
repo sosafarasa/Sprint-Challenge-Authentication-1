@@ -6,8 +6,9 @@ const routes = require('./api/routes/routes');
 
 const server = express();
 const corsOptions = {
-  // You'll need to set the request URL here.
-  // Once done, pass this object to the cors middleware.
+  // If you're moving onto the stretch problem you'll need to set this obj with the appropriate fields
+  // ensure that your client's URL/Port can achieve a Handshake
+  // then pass this object to the cors() function
 };
 
 server.use(bodyParser.json());

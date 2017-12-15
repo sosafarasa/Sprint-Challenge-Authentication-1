@@ -4,10 +4,10 @@ const {
   compareUserPW
 } = require('../utils/middlewares');
 
-const { jokes, createUser, login } = require('../controllers');
+const { getAllJokes, createUser, login } = require('../controllers');
 
 module.exports = server => {
-  server.get('/api/jokes', authenticate, jokes.getAllJokes);
+  server.get('/api/jokes', authenticate, getAllJokes);
   server
     .route('/api/users')
     .post(encryptUserPW /* I need some controller Love*/);

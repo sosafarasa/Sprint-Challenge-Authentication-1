@@ -28,8 +28,8 @@
 ## Initializing the Project
 
 * `cd` into the root of the project and run `npm install`.
-* once you have your `node_modules` go ahead and start your `mongod` server \* I recommend using the `mongod --dbpath data` flag.
-* run `nodemon app.js` to start your node server.
+* Once you have your `node_modules` go ahead and start your `mongod` server \* I recommend using the `mongod --dbpath data` flag.
+* Run `nodemon app.js` to start your node server.
 * **TEST** this project using **`POSTMAN`**. Once you finish the project, you'll be tasked to set up `cors` properly for use with a client.
 
 ### Step 1: Implement your User Schema in `api/models/userModels.js`
@@ -53,8 +53,8 @@
 
 ### Step 3: Users Gotta Login!
 
-* this step will be real fun.
-* head over to your `comparePW` function in `api/utils/middlwares.js` and follow the instructions for the that piece of login `middleware`.
+* This step will be real fun.
+* Head over to your `comparePW` function in `api/utils/middlwares.js` and follow the instructions for the that piece of login `middleware`.
 * Once you have compared passwords with `bcrypt`, you'll need to `**ENSURE THAT**` you have set the `req.username` as the user's `username`. Without it, your `login controller` won't know what to do and you'll receive this error:
 
 ```

@@ -1,6 +1,11 @@
 const jwt = require('jsonwebtoken');
 
 const login = (req, res) => {
+  if (!req.username) {
+    return res.status(403).json({
+      error: 'no usename check your comparePW middleware'
+    });
+  }
   const payload = {
     username: req.username
   }; // what will determine our payload.

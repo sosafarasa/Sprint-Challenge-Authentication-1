@@ -1,6 +1,6 @@
 # Pushing you Onward with your knowledge of Authentication.
 
-* **DISCLAIMER** Authentication is a subject that many people spend a large amount of their careers learning about. This is not something we expect you to have a mastery over, rather, we're preparing you to be able have an intelligent.
+* **DISCLAIMER** Authentication is a subject that many people spend a large amount time throughout their careers obtaining knowledge over. This is not something we expect you to have a mastery over, rather, we're preparing you to be able have an intelligent conversation about the subject.
 
 ![UnAuthorized](keep-calm-you-are-not-authorized.png)
 
@@ -18,7 +18,7 @@
 1. What does bcrypt do in order to prevent attacks?
 1. What are the three parts of the JSON Web Token?
 
-## Project - User Management System
+## Project Description - User Management System - Jokes On YoU!
 
 * What we have here is a wise-guy application. _Dad jokes_ are all the rage these days.
 * Our main problem with the application now is that we are trying to receive some mad dad jokes that are being requested from an external api, but we are locked out.
@@ -27,9 +27,47 @@
 
 ## Initializing the Project
 
+* `cd` into the root of the project and run `npm install`.
+* once you have your `node_modules` go ahead and start your `mongod` server \* I recommend using the `mongod --dbpath data` flag.
+* run `nodemon app.js` to start your node server.
+* **TEST** this project using **`POSTMAN`**. Once you finish the project, you'll be tasked to set up `cors` properly for use with a client.
+
+### Step 1: Implement your User Schema in `api/models/userModels.js`
+
+* The required fields are `username` (must be unique and required) and `password`.
+
+```
+{
+  "username": "Tony@stark.com",
+  "password": "pepperpots"
+}
+```
+
+### Step 2: Implement your Create User Functionality.
+
+* Start in `api/utils/middlewares.js`.
+* Follow the steps provided in the `encryptPW` function. Once done there, head back here for further instructions.
+* Check out `api/controllers/user.js`. There are some things to implement there.
+* Once you have your controller implemented, head over to your `api/routes/routes.js` file and notice we have a controller missing. Go ahead and pass in this controller.
+* **TEST** your `/api/user` _POST_ to ensure you can create a user with an encrypted password.
+
+### Step 3: Users Gotta Login!
+
+### Step 4: _GET_ your Jokes!
+
+* Grab your Token sent back to you in JWT format from _/login_.
+* Send a `GET` request up to `/api/jokes` with the appropriate
+* Without the appropriate request you'll get an error that looks like this from the `jwt` package
+
 ```
 {
     "name": "JsonWebTokenError",
     "message": "invalid signature"
 }
 ```
+
+### Stretch Problem: Build a front end to interface with your User Auth System
+
+* In order to play around with a client server app, you'll need to set up your `cors` inside of `server.js` properly.
+* Using React and Redux and React Router, create a `Sign Up`, `Sign In` and `Jokes` page.
+* Once you have the functionality down, you'll be able to style it up a bit and play around with the jokes etc.

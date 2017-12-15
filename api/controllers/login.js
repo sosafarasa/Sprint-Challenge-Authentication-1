@@ -1,9 +1,10 @@
 const jwt = require('jsonwebtoken');
+const { mysecret } = require('../../config');
 
 const login = (req, res) => {
   if (!req.username) {
     return res.status(403).json({
-      error: 'no usename check your comparePW middleware'
+      error: 'no username check your comparePW middleware'
     });
   }
   const payload = {

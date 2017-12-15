@@ -2,8 +2,8 @@ const User = require('../models/userModels');
 const bcrypt = require('bcrypt');
 
 const createUser = (req, res) => {
-  // this is where the magic sauce of bcrypt needs to be implemented
-  // https://www.npmjs.com/package/bcrypt Refer to these docs
+  // there should be a user object set on req
+  // use that req.user object to create a user and save it to our Mongo instance.
 };
 
 module.exports = {

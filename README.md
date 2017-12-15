@@ -22,3 +22,10 @@
 * What we have here is a wise-guy application. Dad jokes are all the rage these days.
 * Our main problem with the application now is that we are trying to receive some mad dad jokes that are being requested from an external api, but we are locked out.
 * Trust me, we all need these dad jokes in our lives.
+
+```
+{
+    "name": "JsonWebTokenError",
+    "message": "invalid signature"
+}
+```

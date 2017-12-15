@@ -53,6 +53,14 @@
 
 ### Step 3: Users Gotta Login!
 
+* this step will be real fun.
+* head over to your `comparePW` function in `api/utils/middlwares.js` and follow the instructions for the that piece of login `middleware`.
+* Once you have compared passwords with `bcrypt`, you'll need to `**ENSURE THAT**` you have set the `req.username` as the user's `username`. Without it, your `login controller` won't know what to do and you'll receive this error:
+
+```
+ error: 'no username check your comparePW middleware'
+```
+
 ### Step 4: _GET_ your Jokes!
 
 * Grab your Token sent back to you in JWT format from _/login_.

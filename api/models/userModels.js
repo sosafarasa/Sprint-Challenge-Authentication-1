@@ -8,16 +8,6 @@ const UserSchema = Schema({
   // create your user schema here.
   // username: required, unique and lowercase
   // password: required
-  username: {
-    type: String,
-    required: true,
-    unique: true,
-    lowercase: true
-  },
-  password: {
-    type: String,
-    required: true
-  }
 });
 
 UserSchema.pre('save', function(next) {

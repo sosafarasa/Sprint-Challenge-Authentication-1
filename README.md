@@ -43,23 +43,22 @@
 }
 ```
 
-### Step 2: Implement your Create User Functionality.
+* Next we'll use bcrypt to set up a `pre` hook on our `save` function for the UserSchema.
+* This pre save hook will act as middleware to encrypt our users passwords.
+* You can also take this time to set up a `checkPassword` method that can be used for comparing user passwords later on.
 
-* Start in `api/utils/middlewares.js`.
-* Follow the steps provided in the `encryptPW` function. Once done there, head back here for further instructions.
-* Check out `api/controllers/user.js`. There are some things to implement there.
-* Once you have your controller implemented, head over to your `api/routes/routes.js` file and notice we have a controller missing. Go ahead and pass in this controller.
+### Step 2: Implement your Create User Functionality in `api/controllers/user.js`
+
+* Most of the heavy lifting will be taken care of in our pre save `middleware` that we've already implemented in our `userModel` file.
+* Be sure to follow instructions on creating a user and you should be set
 * **TEST** your `/api/user` _POST_ to ensure you can create a user with an encrypted password.
+* Before moving on make sure you can create a user in the DB with an encrypted pw.
 
 ### Step 3: Users Gotta Login!
 
-* This step will be real fun.
-* Head over to your `comparePW` function in `api/utils/middlwares.js` and follow the instructions for the that piece of login `middleware`.
-* Once you have compared passwords with `bcrypt`, you'll need to `**ENSURE THAT**` you have set the `req.username` as the user's `username`. Without it, your `login controller` won't know what to do and you'll receive this error:
-
-```
- error: 'no username check your comparePW middleware'
-```
+* This step will be real fun. Primarily because it's built out for you already! You're welcome!
+* IF your `checkPassword` function is working properly, you should get back a token from the server.
+* You'll need to handle this token appropriately in your next route.
 
 ### Step 4: _GET_ your Jokes!
 

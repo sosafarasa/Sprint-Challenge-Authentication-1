@@ -14,9 +14,9 @@
 
 ## Questions - Self Study - You can exercise your Google-Fu for this and any other _Sprint Challenge_ in the future.
 
-1. Describe Middleware, Sessions (as we know them in express), bcrypt and JWT.
-1. What does bcrypt do in order to prevent attacks?
-1. What are the three parts of the JSON Web Token?
+1.  Describe Middleware, Sessions (as we know them in express), bcrypt and JWT.
+1.  What does bcrypt do in order to prevent attacks?
+1.  What are the three parts of the JSON Web Token?
 
 ## Project Description - User Management System - Jokes On YoU!
 
@@ -27,7 +27,7 @@
 
 ## Initializing the Project
 
-* `cd` into the root of the project and run `npm install`.
+* `cd` into the root of the project and run `yarn install`.
 * once you have your `node_modules` go ahead and start your `mongod` server \* I recommend using the `mongod --dbpath data` flag.
 * run `nodemon app.js` to start your node server.
 * **TEST** this project using **`POSTMAN`**. Once you finish the project, you'll be tasked to set up `cors` properly for use with a client.

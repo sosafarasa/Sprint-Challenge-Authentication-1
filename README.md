@@ -27,15 +27,9 @@
 
 ## Initializing the Project
 
-<<<<<<< HEAD
 * `cd` into the root of the project and run `yarn install`.
-* once you have your `node_modules` go ahead and start your `mongod` server \* I recommend using the `mongod --dbpath data` flag.
-* run `nodemon app.js` to start your node server.
-=======
-* `cd` into the root of the project and run `npm install`.
-* Once you have your `node_modules` go ahead and start your `mongod` server \* I recommend using the `mongod --dbpath data` flag.
+* Once you have your `node_modules` go ahead and start your `mongod` server \* use either `mongod` `mongod --dbpath data` flag.
 * Run `nodemon app.js` to start your node server.
->>>>>>> 517957b7e61a68f360a0a87089305d328ebc2585
 * **TEST** this project using **`POSTMAN`**. Once you finish the project, you'll be tasked to set up `cors` properly for use with a client.
 
 ### Step 1: Implement your User Schema in `api/models/userModels.js`

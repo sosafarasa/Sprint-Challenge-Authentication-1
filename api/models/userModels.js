@@ -12,14 +12,14 @@ const UserSchema = Schema({
 
 UserSchema.pre('save', function(next) {
   // https://github.com/kelektiv/node.bcrypt.js#usage
-  // TODO: Fill this middleware in with the Proper password encrypting, bcrypt.hash()
-  // Once the user is set, call next()
-  // and this will send you back into the createUser you'll
+  // Fill this middleware in with the Proper password encrypting, bcrypt.hash()
+  // if there is an error here you'll need to handle it by calling next(err);
+  // Once the password is encrypted, call next() so that your userController and create a user
 });
 
 UserSchema.methods.checkPassword = function() {
   // https://github.com/kelektiv/node.bcrypt.js#usage
-  // TODO: Fill this method in with the Proper password comparing, bcrypt.compare()
+  // Fill this method in with the Proper password comparing, bcrypt.compare()
   // Your controller will be responsible for sending the information here for password comparison
   // Once you have the user, you'll need to pass the encrypted pw and the plaintext pw to the compare function
 };

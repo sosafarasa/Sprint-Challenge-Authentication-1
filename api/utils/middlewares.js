@@ -24,9 +24,8 @@ const encryptUserPW = (req, res, next) => {
   const { username, password } = req.body;
   // https://github.com/kelektiv/node.bcrypt.js#usage
   // TODO: Fill this middleware in with the Proper password encrypting, bcrypt.hash()
-  // Once the password is encrypted using bcrypt, you'll need to save the user the DB.
-  // Once the user is set, take the savedUser and set the returned document from Mongo on req.user
-  // call next to head back into the route handler for encryptUserPW
+  // Once the password is encrypted using bcrypt you'll need to set a user obj on req.user with the encrypted PW
+  // Once the user is set, call next and head back into the userController to save it to the DB
 };
 
 const compareUserPW = (req, res, next) => {

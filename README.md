@@ -51,7 +51,7 @@
 
 * Most of the heavy lifting will be taken care of in our pre save `middleware` that we've already implemented in our `userModel` file.
 * Be sure to follow instructions on creating a user and you should be set
-* **TEST** your `/api/user` _POST_ to ensure you can create a user with an encrypted password.
+* **TEST** your `/api/users` _POST_ to ensure you can create a user with an encrypted password.
 * Before moving on make sure you can create a user in the DB with an encrypted pw.
 
 ### Step 3: Users Gotta Login!

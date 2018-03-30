@@ -36,7 +36,7 @@
 
 * The required fields are `username` (must be unique and required) and `password`.
 
-```
+```json
 {
   "username": "Tony@stark.com",
   "password": "pepperpots"
@@ -66,7 +66,7 @@
 * Send a `GET` request up to `/api/jokes` with the appropriate
 * Without the appropriate request you'll get an error that looks like this from the `jwt` package
 
-```
+```json
 {
     "name": "JsonWebTokenError",
     "message": "invalid signature"

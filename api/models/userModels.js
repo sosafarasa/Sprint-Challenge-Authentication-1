@@ -24,7 +24,4 @@ UserSchema.methods.checkPassword = function(plainTextPW, callBack) {
   // Once you have the user, you'll need to pass the encrypted pw and the plaintext pw to the compare function
 };
 
-// if you're really stuck with this at this point, you can reference this document.
-// https://github.com/LambdaSchool/Auth-JWT/blob/master/models/index.js This is what we're going for here.
-
 module.exports = mongoose.model('User', UserSchema);

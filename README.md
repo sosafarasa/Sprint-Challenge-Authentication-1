@@ -63,8 +63,8 @@
 ### Step 4: _GET_ your Jokes!
 
 * Grab your Token sent back to you in JWT format from _/login_.
-* Send a `GET` request up to `/api/jokes` with the appropriate
-* Without the appropriate request you'll get an error that looks like this from the `jwt` package
+* Send a `GET` request up to `/api/jokes` with the appropriate header and token.
+* Without the appropriate request header you'll get an error that looks like this from the `jwt` package
 
 ```json
 {
@@ -76,5 +76,5 @@
 ### Stretch Problem: Build a front end to interface with your User Auth System
 
 * In order to play around with a client server app, you'll need to set up your `cors` inside of `server.js` properly.
-* Using React and Redux and React Router, create a `Sign Up`, `Sign In` and `Jokes` page.
+* Using React and React Router, create a `Sign Up`, `Sign In` and `Jokes` page.
 * Once you have the functionality down, you'll be able to style it up a bit and play around with the jokes etc.

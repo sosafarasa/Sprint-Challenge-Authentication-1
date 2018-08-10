@@ -28,7 +28,7 @@
 
 - `cd` into the root of the project and run `yarn install`.
 - Once you have your `node_modules` go ahead and run `yarn start` or `npm start` to start your node server.
-- **TEST** this project using **`POSTMAN`**. Once you finish the project, you'll be tasked to set up `cors` properly for use with a client.
+- **TEST** this project using **`POSTMAN`**.
 
 ### Assignment
 

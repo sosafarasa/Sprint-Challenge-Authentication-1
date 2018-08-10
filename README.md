@@ -32,7 +32,7 @@
 
 ### Assignment
 
-Implement your the `register` and `login` functions insde `/config/routes.js`.
+Implement your the `register` and `login` functions inside `/config/routes.js`.
 
 The migrations and a database with empty users is already included, your job is adding the authentication related code. If every is done correctly, visiting `/api/jokes` should return a list of jokes.
 

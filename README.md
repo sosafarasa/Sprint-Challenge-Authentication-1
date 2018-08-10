@@ -40,3 +40,4 @@ The migrations and a database with empty users is already included, your job is 
 
 - Using React and React Router, create a `Sign Up`, `Sign In` and `Jokes` page.
 - Once you have the functionality down, you'll be able to style it up a bit and play around with the jokes etc.
+- Use **sessions and cookies** to reimplement the authentication on the server.

@@ -13,9 +13,10 @@
 
 ## Questions - Self Study - You can exercise your Google-Fu for this and any other _Sprint Challenge_ in the future.
 
-1.  Describe Middleware, Sessions (as we know them in express), bcrypt and JWT.
-1.  What does bcrypt do in order to prevent attacks?
-1.  What are the three parts of the JSON Web Token?
+1. What is the purpose of using _sessions_?
+2. What does bcrypt do to help us store passwords in a secure manner.
+3. What does bcrypt do to slow down attackers?
+4. What are the three parts of the JSON Web Token?
 
 ## Project Description - User Management System - Jokes On YoU!
 

@@ -13,15 +13,15 @@
 
 ## Questions - Self Study - You can exercise your Google-Fu for this and any other _Sprint Challenge_ in the future.
 
-1.  Describe Middleware, Sessions (as we know them in express), bcrypt and JWT.
-1.  What does bcrypt do in order to prevent attacks?
-1.  What are the three parts of the JSON Web Token?
+1. What is the purpose of using _sessions_?
+2. What does bcrypt do to help us store passwords in a secure manner.
+3. What does bcrypt do to slow down attackers?
+4. What are the three parts of the JSON Web Token?
 
 ## Project Description - User Management System - Jokes On YoU!
 
 - What we have here is a wise-guy application. _Dad jokes_ are all the rage these days.
-- Our main problem with the application now is that we are trying to receive some mad dad jokes that are being requested from an external api, but we are locked out.
-- Trust me, we all need these dad jokes in our lives.
+- Our main problem with the application now is that we are trying to receive some mad dad jokes that are being requested from an external api, but we are locked out. Trust me, we all need these dad jokes in our lives.
 - In order to be able to access our Killer Jokes you'll need to implement a User Authentication System that uses bcrypt and JWT.
 
 ## Initializing the Project
@@ -32,12 +32,11 @@
 
 ### Assignment
 
-Implement your the `register` and `login` functions inside `/config/routes.js`.
+Implement the `register` and `login` functions inside `/config/routes.js`. Use JSON Web Tokens for authentication.
 
 The migrations and a database with empty users is already included, your job is adding the authentication related code. If every is done correctly, visiting `/api/jokes` should return a list of jokes.
 
 ### Stretch Problem: Build a front end to interface with your User Auth System
 
-- Using React and React Router, create a `Sign Up`, `Sign In` and `Jokes` page.
+- Add a React client that connects to your API and has pages for `Sign Up`, `Sign In` and showing a list of `Jokes`.
 - Once you have the functionality down, you'll be able to style it up a bit and play around with the jokes etc.
-- Use **sessions and cookies** to reimplement the authentication on the server.

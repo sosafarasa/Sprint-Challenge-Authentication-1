@@ -18,9 +18,7 @@ function login(req, res) {
 
 function getJokes(req, res) {
   axios
-    .get(
-      'https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_ten'
-    )
+    .get('https://safe-falls-22549.herokuapp.com/random_ten')
     .then(response => {
       res.status(200).json(response.data);
     })

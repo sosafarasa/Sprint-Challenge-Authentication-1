@@ -35,7 +35,7 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 ## Project Set Up
 
-- [ ] `cd` into the root of the project and run `yarn install`.
+- [ ] `cd` into the root of the project and run `yarn` to install dependencies.
 - [ ] Once you have your `node_modules` go ahead and run `yarn server` or `npm run server` to start your node server.
 - [ ] **TEST** this project using **`POSTMAN`**.
 

@@ -52,4 +52,4 @@ Demonstrate your understanding of this week's concepts by answering the followin
 ### Stretch Problem: Build a front end to interface with your User Auth System
 
 - Add a React client that connects to your API and has pages for `Sign Up`, `Sign In` and showing a list of `Jokes`.
-- Once you have the functionality down, you'll be able to style it up a bit and play around with the jokes etc.
+- Once you have the functionality down, style it!

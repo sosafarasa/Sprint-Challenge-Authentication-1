@@ -1,40 +1,53 @@
-# Pushing you Onward with your knowledge of Authentication.
+# Sprint Challenge: Authentication - Dad Jokes
+
+This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored Authentication. During this Sprint, you studied Introduction to Authentication, Using Sessions and Cookies, Using JSON Web Tokens (JWT), and Client-side Authentication. In your challenge this week, you will demonstrate proficiency by creating an application that will give you a list of random programming dad jokes, as long as you are authorized.
 
 - **DISCLAIMER** Authentication is a subject that many people spend a large amount time throughout their careers obtaining knowledge over. This is not something we expect you to have a mastery over, rather, we're preparing you to be able have an intelligent conversation about the subject.
 
-![UnAuthorized](keep-calm-you-are-not-authorized.png)
+## Instructions
 
-- The objective of this challenge is to get you used to answering a few questions about Authentication.
-- We also have some more reps for you to help hammer in the knowledge you've thus far learned.
-- Answers to your written questions will be recorded in _ANSWERS.md_
-- This is to be worked on alone but you can use outside resources. You can _reference_ any old code you may have, and the React Documentation, however, please refrain from copying and pasting any of your answers. Try and understand the question and put your responses in your own words. Be as thorough as possible when explaining something.
+**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
-## Start by forking and cloning this repository.
+This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-## Questions - Self Study - You can exercise your Google-Fu for this and any other _Sprint Challenge_ in the future.
+You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency w/ Authentication and your command of the concepts and techniques in the Introduction to Authentication, Using Sessions and Cookies, Using JSON Web Tokens (JWT), and Client-side Authentication modules.
+
+You have three hours to complete this challenge. Plan your time accordingly.
+
+## Commits
+
+Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons and your project manager.
+
+## Description
+
+In this challenge, you build a real wise-guy application. _Dad jokes_ are all the rage these days. Currently the application is trying to receive some `Dad Jokes`, however we are currently locked out.
+
+Implement an User Authentication System in order to access the jokes from the Jokes API that we want to consume. You will need to ensure that your system uses `bcrypt` for hashing and encrypting your user's passwords, as well as JWT for handling the authorization aspect of the app.
+
+## Self-Study/Essay Questions
+
+Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 1. What is the purpose of using _sessions_?
-2. What does bcrypt do to help us store passwords in a secure manner.
-3. What does bcrypt do to slow down attackers?
-4. What are the three parts of the JSON Web Token?
+1. What does bcrypt do to help us store passwords in a secure manner.
+1. What does bcrypt do to slow down attackers?
+1. What are the three parts of the JSON Web Token?
 
-## Project Description - User Management System - Jokes On YoU!
+## Project Set Up
 
-- What we have here is a wise-guy application. _Dad jokes_ are all the rage these days.
-- Our main problem with the application now is that we are trying to receive some mad dad jokes that are being requested from an external api, but we are locked out. Trust me, we all need these dad jokes in our lives.
-- In order to be able to access our Killer Jokes you'll need to implement a User Authentication System that uses bcrypt and JWT.
+- [ ] `cd` into the root of the project and run `yarn install`.
+- [ ] Once you have your `node_modules` go ahead and run `yarn start` or `npm start` to start your node server.
+- [ ] **TEST** this project using **`POSTMAN`**.
 
-## Initializing the Project
+### Minimum Viable Product
 
-- `cd` into the root of the project and run `yarn install`.
-- Once you have your `node_modules` go ahead and run `yarn start` or `npm start` to start your node server.
-- **TEST** this project using **`POSTMAN`**.
+- [ ] Implement the `register` function inside `/config/routes.js`.
+- [ ] Implement the `login` function inside `/config/routes.js`.
+- [ ] Use JSON Web Tokens for authentication.
 
-### Assignment
+**Note** The migrations and a database with empty users is already included
 
-Implement the `register` and `login` functions inside `/config/routes.js`. Use JSON Web Tokens for authentication.
-
-The migrations and a database with empty users is already included, your job is adding the authentication related code. If every is done correctly, visiting `/api/jokes` should return a list of jokes.
+- [ ] Add the authentication related code. If every is done correctly, visiting `/api/jokes` should return a list of jokes.
 
 ### Stretch Problem: Build a front end to interface with your User Auth System
 

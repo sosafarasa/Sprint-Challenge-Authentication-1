@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const { authenticate } = require('./middlewares');
+const { authenticate } = require('../auth/authenticate');
 
 module.exports = server => {
   server.post('/api/register', register);

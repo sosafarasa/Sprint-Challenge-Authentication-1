@@ -12,6 +12,4 @@ server.use(express.json());
 
 configureRoutes(server);
 
-module.exports = {
-  server,
-};
+module.exports = server;

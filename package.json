@@ -1,5 +1,5 @@
 {
-  "name": "auth-challenge",
+  "name": "webauth-challenge",
   "version": "1.0.0",
   "description": "Authentication Sprint Challenge",
   "main": "index.js",
@@ -21,14 +21,14 @@
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^6.2.0",
+    "dotenv": "^7.0.0",
     "express": "^4.16.4",
-    "helmet": "^3.15.1",
-    "jsonwebtoken": "^8.5.0",
-    "knex": "^0.16.3",
+    "helmet": "^3.16.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.16.5",
     "sqlite3": "^4.0.6"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.19.0"
   }
 }

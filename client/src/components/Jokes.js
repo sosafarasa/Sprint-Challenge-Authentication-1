@@ -23,7 +23,7 @@ class Jokes extends Component {
   render() {
     return (
        
-      <div>
+      <div className= 'jokes'>
         <h2>Jokes</h2>
         <ul>
           {this.state.jokes.map(u => {

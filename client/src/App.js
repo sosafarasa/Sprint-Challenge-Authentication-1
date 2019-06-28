@@ -14,9 +14,9 @@ class App extends Component {
       <>
       <header>
         <nav>
-          <NavLink to= '/register'>Register</NavLink>
-          <NavLink to= '/'>Login</NavLink>
-          <NavLink to= '/jokes'>Jokes</NavLink>
+          <NavLink className= 'navlink' to= '/register'>Register</NavLink>
+          <NavLink className= 'navlink' to= '/'>Login</NavLink>
+          <NavLink className= 'navlink' to= '/jokes'>Jokes</NavLink>
           <button onClick= {this.logout}>Logout</button>
         </nav>
       </header>

@@ -16,25 +16,25 @@ class Register extends Component {
         <form onSubmit={this.handleSubmit}>
           <div>
             <input
-              name="username"
+              name='username'
               value={this.state.username}
               onChange={this.handleInputChange}
-              type="text"
-              placeholder="username"
+              type='text'
+              placeholder='username'
             />
           </div>
           <div>
             <input
-              name="password"
+              name='password'
               value={this.state.password}
               onChange={this.handleInputChange}
-              type="password"
-              placeholder="password"
+              type='password'
+              placeholder='password'
             />
           </div>
          
           <div>
-            <button type="submit">Register</button>
+            <button type='submit'>Register</button>
           </div>
         </form>
       </>
@@ -49,10 +49,10 @@ class Register extends Component {
   handleSubmit = e => {
     e.preventDefault();
    
-    const endpoint = "http://localhost:3300/api/register";
+    const endpoint = 'http://localhost:3300/api/register';
     axios.post(endpoint, this.state)
       .then(res => {
-        localStorage.setItem("jwt", res.data.token); 
+        localStorage.setItem('jwt', res.data.token); 
         this.props.history.push('/jokes');
       })
       .catch(err => {

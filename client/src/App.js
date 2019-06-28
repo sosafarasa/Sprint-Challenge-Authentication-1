@@ -15,7 +15,7 @@ class App extends Component {
       <header>
         <nav>
           <NavLink to= '/register'>Register</NavLink>
-          <NavLink to= '/login'>Login</NavLink>
+          <NavLink to= '/'>Login</NavLink>
           <NavLink to= '/jokes'>Jokes</NavLink>
           <button onClick= {this.logout}>Logout</button>
         </nav>
@@ -23,7 +23,7 @@ class App extends Component {
 
       <main>
         <Route path='/register' component= {Register} />
-        <Route path='/login' component= {Login} />
+        <Route exact path='/' component= {Login} />
         <Route path='/jokes' component= {Jokes} />
       </main>
       </>
@@ -31,7 +31,7 @@ class App extends Component {
   }
   logout = () => {
     localStorage.removeItem('jwt');
-    this.props.history.push('/login');
+    this.props.history.push('/');
   }
 }
 
